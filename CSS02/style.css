@@ -280,6 +280,83 @@ section {
   100% { transform: none; } 
 }
 
+/* ============================= */
+/* 📱 RESPONSIVE FIXES */
+/* ============================= */
+
+/* Tablets & below */
+@media (max-width: 768px) {
+  .girl {
+    display: none;
+  }
+
+  .trees {
+    animation: none;
+  }
+
+  .VS {
+    padding: 25px 18px;
+  }
+
+  .VS h2 {
+    font-size: 2.2rem;
+  }
+
+  .VS h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  body,
+  section {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .VS {
+    width: 95%;
+    max-width: 360px;
+    padding: 22px 16px;
+  }
+
+  .inputBox input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  #btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .group a {
+    text-align: center;
+  }
+
+  .leaves .set div {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  .VS h2 {
+    font-size: 1.9rem;
+  }
+
+  .VS h3 {
+    font-size: 1.4rem;
+  }
+}
+
 
 
 
