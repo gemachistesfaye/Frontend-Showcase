@@ -93,21 +93,13 @@ Please report bugs or suggest new features via **GitHub Issues**.
 
 ---
 
-## ✉️ Contact & Support
+## ✉️ Contact Me
 
-
-<p align="center">
-  <a href="https://x.com/GemachisTe79854">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white&style=for-the-badge" alt="Twitter" />
-  </a>
-  <a href="https://www.instagram.com/urjiiko1">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge" alt="Instagram" />
+ <a href="https://github.com/urjiiko1">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub" />
   </a>
   <a href="https://www.linkedin.com/in/gemachis-tesfaye-137196318">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/urjiiko1">
-    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub" />
   </a>
   <a href="https://t.me/urjiiko1">
     <img src="https://img.shields.io/badge/Telegram-0088CC?logo=telegram&logoColor=white&style=for-the-badge" alt="Telegram" />
@@ -116,6 +108,6 @@ Please report bugs or suggest new features via **GitHub Issues**.
 
 For collaboration or mentorship inquiries, please open an issue or send a DM via social links.
 
----
+
 
 
