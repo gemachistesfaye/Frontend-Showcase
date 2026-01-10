@@ -66,7 +66,7 @@ A simple expense tracking application for managing and monitoring daily expenses
 
 - Document learning progress during the bootcamp  
 - Showcase frontend development skills  
-- Serve as a foundation for future portfolio projects  
+- Serve as a foundation for future others projects  
 
 ---
 
