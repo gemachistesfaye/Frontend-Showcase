@@ -1,5 +1,5 @@
 
-# ISHUB AAU Summer Bootcamp 2025 – Frontend Projects
+# Summer Bootcamp  – Frontend Projects
 
 This repository contains a **collection of frontend projects** developed during the  
 **ISHUB AAU Summer Bootcamp 2025**, Frontend Development track.
@@ -29,7 +29,7 @@ An interactive quiz application built to test user knowledge with instant feedba
 A frontend application that displays currency exchange rates with a clean and responsive UI.
 
 - 📂 **Source Code:** [Exchange Rate Folder](./exchange-rate)
-- 🌐 **Live Demo:** https://gemachistesfaye.github.io/Frontend-Showcase/exchange-rate/
+- 🌐 **Live Demo:** [Click Here](https://gemachistesfaye.github.io/Frontend-Showcase/Project%20Assignement/exchange-rate)
 
 **Technologies Used:**
 - HTML  
@@ -42,7 +42,7 @@ A frontend application that displays currency exchange rates with a clean and re
 A simple expense tracking application for managing and monitoring daily expenses.
 
 - 📂 **Source Code:** [Expense Tracker Folder](./expense-tracker)
-- 🌐 **Live Demo:** https://gemachistesfaye.github.io/Frontend-Showcase/expense-tracker/
+- 🌐 **Live Demo:** [Click Here](https://gemachistesfaye.github.io/Frontend-Showcase/Project%20Assignement/expense-tracker)
 
 **Technologies Used:**
 - HTML  
