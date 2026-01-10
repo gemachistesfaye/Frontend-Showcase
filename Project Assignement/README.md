@@ -1,5 +1,5 @@
 
-# Summer Bootcamp  – Frontend Projects
+# Summer Bootcamp 🎓 – Frontend Projects 💻
 
 This repository contains a **collection of frontend projects** developed during the  
 **ISHUB AAU Summer Bootcamp 2025**, Frontend Development track.
