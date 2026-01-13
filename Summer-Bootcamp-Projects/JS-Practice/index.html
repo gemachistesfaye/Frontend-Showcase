@@ -4,117 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Logic Playground - Comprehensive Lab</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .console-box {
-            background-color: #1e1e1e;
-            color: #d4d4d4;
-            font-family: 'Fira Code', 'Courier New', Courier, monospace;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-top: 0.75rem;
-            min-height: 40px;
-            white-space: pre-wrap;
-            border-left: 4px solid #3b82f6;
-            font-size: 0.875rem;
-        }
-
-        .card {
-            background: white;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        code {
-            color: #eb5757;
-            background: #f9f2f2;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-
-        .code-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(12px);
-            z-index: 100;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .code-overlay.active {
-            display: flex;
-            opacity: 1;
-        }
-
-        .code-container {
-            background: #282c34;
-            width: 100%;
-            max-width: 850px;
-            border-radius: 1rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            border: 1px solid #3e4451;
-            display: flex;
-            flex-direction: column;
-            max-height: 85vh;
-        }
-
-        .code-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid #3e4451;
-            background: #21252b;
-            border-radius: 1rem 1rem 0 0;
-        }
-
-        .code-content {
-            padding: 1.5rem;
-            overflow-y: auto;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            color: #abb2bf;
-            white-space: pre;
-        }
-
-        /* Syntax Highlighting */
-        .code-keyword { color: #c678dd; font-weight: bold; }
-        .code-func { color: #61afef; }
-        .code-string { color: #98c379; }
-        .code-comment { color: #5c6370; font-style: italic; }
-        .code-num { color: #d19a66; }
-
-        .toast {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #10b981;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 99px;
-            font-size: 0.875rem;
-            z-index: 200;
-            display: none;
-        }
-
-        .icon-btn { cursor: pointer; transition: all 0.2s; }
-    </style>
+    
 </head>
 <body class="bg-gray-100 min-h-screen pb-20 font-sans">
 
@@ -127,7 +19,7 @@
 
     <main class="max-w-5xl mx-auto px-4 space-y-10">
 
-        <!-- Part 1: Type Coercion -->
+       
         <section class="card p-8 rounded-2xl shadow-sm border border-gray-200">
             <div class="flex justify-between items-center mb-6 border-b pb-2">
                 <h2 class="text-2xl font-bold text-gray-800 flex items-center">
@@ -167,7 +59,7 @@ console.<span class="code-func">log</span>(<span class="code-num">0</span> == <s
 console.<span class="code-func">log</span>(<span class="code-keyword">Boolean</span>(<span class="code-keyword">NaN</span>));    <span class="code-comment">// false</span></div>
         </section>
 
-        <!-- Part 2: Conditional Checks -->
+    
         <section class="card p-8 rounded-2xl shadow-sm border border-gray-200">
             <div class="flex justify-between items-center mb-6 border-b pb-2">
                 <h2 class="text-2xl font-bold text-gray-800 flex items-center">
@@ -225,7 +117,7 @@ console.<span class="code-func">log</span>(<span class="code-keyword">Boolean</s
 }</div>
         </section>
 
-        <!-- Part 3: Loop Exercises -->
+ 
         <section class="card p-8 rounded-2xl shadow-sm border border-gray-200">
             <div class="flex justify-between items-center mb-6 border-b pb-2">
                 <h2 class="text-2xl font-bold text-gray-800 flex items-center">
@@ -274,7 +166,7 @@ console.<span class="code-func">log</span>(<span class="code-keyword">Boolean</s
 }</div>
         </section>
 
-        <!-- Part 4: Advanced Function Tasks -->
+
         <section class="card p-8 rounded-2xl shadow-sm border border-gray-200">
             <div class="flex justify-between items-center mb-6 border-b pb-2">
                 <h2 class="text-2xl font-bold text-gray-800 flex items-center">
@@ -321,7 +213,7 @@ console.<span class="code-func">log</span>(<span class="code-keyword">Boolean</s
 };</div>
         </section>
 
-        <!-- Part 5: Array Operations -->
+
         <section class="card p-8 rounded-2xl shadow-sm border border-gray-200">
             <div class="flex justify-between items-center mb-6 border-b pb-2">
                 <h2 class="text-2xl font-bold text-gray-800 flex items-center">
@@ -369,7 +261,7 @@ console.<span class="code-func">log</span>(<span class="code-keyword">Boolean</s
 
     </main>
 
-    <!-- Overlay Component -->
+
     <div id="globalOverlay" class="code-overlay">
         <div class="code-container">
             <div class="code-header">
@@ -394,143 +286,6 @@ console.<span class="code-func">log</span>(<span class="code-keyword">Boolean</s
 
     <div id="toast" class="toast">Copied to clipboard!</div>
 
-    <script>
-        /** Overlay Helpers **/
-        const overlay = document.getElementById('globalOverlay');
-        const display = document.getElementById('overlayCodeDisplay');
-
-        function openCode(contentId) {
-            display.innerHTML = document.getElementById(contentId).innerHTML;
-            overlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeCode() {
-            overlay.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        function copyCurrentCode() {
-            const text = display.innerText;
-            const dummy = document.createElement("textarea");
-            document.body.appendChild(dummy);
-            dummy.value = text;
-            dummy.select();
-            document.execCommand("copy");
-            document.body.removeChild(dummy);
-            const toast = document.getElementById('toast');
-            toast.style.display = 'block';
-            setTimeout(() => { toast.style.display = 'none'; }, 2000);
-        }
-
-        overlay.addEventListener('click', (e) => { if(e.target === overlay) closeCode(); });
-
-        const logToBox = (boxId, msg) => {
-            const el = document.getElementById(boxId);
-            el.innerText = msg;
-            el.classList.remove('italic');
-        };
-
-        /* ================== LOGIC IMPLEMENTATION ================== */
-
-        // Part 2: Conditionals
-        function number1(num) {
-            if (num > 0) return "The number u input is POSITIVE";
-            else if (num == 0) return "The number u input is ZERO";
-            else return "The number u input is NEGATIVE";
-        }
-
-        function vote(age) {
-            if (age >= 18) return "u are eligible for vote🎉";
-            else if (age < 18 && age >= 0) return "u are not eligible for vote🚫";
-            else return "invalid input⚡";
-        }
-
-        function temp(tp) {
-            if (tp > 0) return "above freezing point 🌡️";
-            else if (tp == 0) return "equal to freezing point ❄️";
-            else return "below freezing point 🧊";
-        }
-
-        // Part 3: Loops
-        function factorial(a) {
-            if (a < 0) return "factorial is not for negative number👎";
-            if (a == 0) return "factorial of 0 is 1 ✅";
-            let result = 1;
-            for (let i = 1; i <= a; i++) result *= i;
-            return `factorial of ${a} is ${result} ✅`;
-        }
-
-        function fibonacci(a) {
-            if (a <= 0) return "enter number greater than 0 ❌";
-            if (a == 1) return "0";
-            if (a == 2) return "0,1";
-            let ab = [0, 1];
-            for (let i = 2; i < a; i++) ab.push(ab[i - 1] + ab[i - 2]);
-            return ab.join(", ");
-        }
-
-        function prime(a) {
-            if (a < 2) return "no prime number for this❌";
-            let ab = [];
-            for (let i = 2; i <= a; i++) {
-                let isP = true;
-                for (let j = 2; j <= Math.sqrt(i); j++) if (i % j == 0) { isP = false; break; }
-                if (isP) ab.push(i);
-            }
-            return `prime numbers till ${a} is ${ab.join(", ")}`;
-        }
-
-        // Part 4: Function Tasks
-        function average(a, b) {
-            if (isNaN(a) || isNaN(b)) return "enter valid number❌";
-            return `average of ${a} and ${b} = ${(a + b) / 2}`;
-        }
-
-        const singlePrime = function(a) {
-            if (isNaN(a) || !Number.isInteger(a)) return "enter valid number❌";
-            if (a <= 1) return "enter number greater than 1⚡";
-            for (let i = 2; i <= Math.sqrt(a); i++) {
-                if (a % i == 0) return `${a} not prime number👎`;
-            }
-            return `${a} is prime number✅`;
-        }
-
-        /** UI Handlers **/
-        function uiNumberCheck() { logToBox('numOutput', number1(Number(document.getElementById('numInput').value))); }
-        function uiVoteCheck() { logToBox('voteOutput', vote(Number(document.getElementById('voteInput').value))); }
-        function uiTempCheck() { logToBox('tempOutput', temp(Number(document.getElementById('tempInput').value))); }
-        function uiFactorial() { logToBox('factOutput', factorial(Number(document.getElementById('factInput').value))); }
-        function uiFibonacci() { logToBox('rangeOutput', fibonacci(Number(document.getElementById('rangeInput').value))); }
-        function uiPrimeRange() { logToBox('rangeOutput', prime(Number(document.getElementById('rangeInput').value))); }
-        function uiAverage() { logToBox('funcOutput', average(Number(document.getElementById('avgA').value), Number(document.getElementById('avgB').value))); }
-        function uiSinglePrime() { logToBox('funcOutput', singlePrime(Number(document.getElementById('singlePrimeInput').value))); }
-
-        // Array Ops
-        let numb = [5, 11, 14, 6, 9, 19, 4];
-        function updateArrayDisplay() { document.getElementById('displayArray').innerText = JSON.stringify(numb); }
-        function resetArray() { numb = [5, 11, 14, 6, 9, 19, 4]; updateArrayDisplay(); logToBox('arrayConsole', '> Array Reset'); }
-        
-        function runOp(op) {
-            let res = "";
-            if(op==='map') res = "Squared: " + JSON.stringify(numb.map(a => a * a));
-            if(op==='filter') res = "Odds: " + JSON.stringify(numb.filter(a => a % 2 !== 0));
-            if(op==='reduce') res = "Sum: " + numb.reduce((a, b) => a + b, 0);
-            if(op==='find') res = "First > 10: " + (numb.find(a => a > 10) || "None");
-            if(op==='findIndex') res = "Index of first even: " + numb.findIndex(a => a % 2 == 0);
-            if(op==='includes') res = "Contains 11? " + numb.includes(11);
-            if(op==='slice') res = "First three: " + JSON.stringify(numb.slice(0, 3));
-            if(op==='sort') { numb.sort((a,b)=>a-b); res = "Sorted (in-place)"; updateArrayDisplay(); }
-            if(op==='splice') { 
-                let removed = numb.splice(numb.length - 1, 1, 21);
-                res = "Removed " + removed + ", Added 21"; 
-                updateArrayDisplay(); 
-            }
-            
-            const consoleEl = document.getElementById('arrayConsole');
-            consoleEl.innerHTML += `<div><span class="text-blue-400 font-bold">> ${op}():</span> ${res}</div>`;
-            consoleEl.scrollTop = consoleEl.scrollHeight;
-        }
-    </script>
+<script src="./script.js"></script>
 </body>
 </html>
