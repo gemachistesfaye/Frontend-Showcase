@@ -1,4 +1,3 @@
-
         const overlay = document.getElementById('globalOverlay');
         const display = document.getElementById('overlayCodeDisplay');
 
@@ -30,11 +29,19 @@
 
         const logToBox = (boxId, msg) => {
             const el = document.getElementById(boxId);
-            el.innerText = msg;
-            el.classList.remove('italic');
+            el.innerHTML = `<span class="text-slate-500 mr-2">></span> ${msg}`;
         };
 
-     
+        function uiNumberCheck() { logToBox('numOutput', number1(Number(document.getElementById('numInput').value))); }
+        function uiVoteCheck() { logToBox('voteOutput', vote(Number(document.getElementById('voteInput').value))); }
+        function uiTempCheck() { logToBox('tempOutput', temp(Number(document.getElementById('tempInput').value))); }
+        function uiFactorial() { logToBox('factOutput', factorial(Number(document.getElementById('factInput').value))); }
+        function uiFibonacci() { logToBox('rangeOutput', fibonacci(Number(document.getElementById('rangeInput').value))); }
+        function uiPrimeRange() { logToBox('rangeOutput', prime(Number(document.getElementById('rangeInput').value))); }
+        function uiAverage() { logToBox('funcOutput', average(Number(document.getElementById('avgA').value), Number(document.getElementById('avgB').value))); }
+        function uiSinglePrime() { logToBox('funcOutput', singlePrime(Number(document.getElementById('singlePrimeInput').value))); }
+
+   
         function number1(num) {
             if (num > 0) return "The number u input is POSITIVE";
             else if (num == 0) return "The number u input is ZERO";
@@ -53,7 +60,6 @@
             else return "below freezing point 🧊";
         }
 
-     
         function factorial(a) {
             if (a < 0) return "factorial is not for negative number👎";
             if (a == 0) return "factorial of 0 is 1 ✅";
@@ -79,10 +85,9 @@
                 for (let j = 2; j <= Math.sqrt(i); j++) if (i % j == 0) { isP = false; break; }
                 if (isP) ab.push(i);
             }
-            return `prime numbers till ${a} is ${ab.join(", ")}`;
+            return `primes till ${a}: ${ab.join(", ")}`;
         }
 
- 
         function average(a, b) {
             if (isNaN(a) || isNaN(b)) return "enter valid number❌";
             return `average of ${a} and ${b} = ${(a + b) / 2}`;
@@ -97,20 +102,14 @@
             return `${a} is prime number✅`;
         }
 
-       
-        function uiNumberCheck() { logToBox('numOutput', number1(Number(document.getElementById('numInput').value))); }
-        function uiVoteCheck() { logToBox('voteOutput', vote(Number(document.getElementById('voteInput').value))); }
-        function uiTempCheck() { logToBox('tempOutput', temp(Number(document.getElementById('tempInput').value))); }
-        function uiFactorial() { logToBox('factOutput', factorial(Number(document.getElementById('factInput').value))); }
-        function uiFibonacci() { logToBox('rangeOutput', fibonacci(Number(document.getElementById('rangeInput').value))); }
-        function uiPrimeRange() { logToBox('rangeOutput', prime(Number(document.getElementById('rangeInput').value))); }
-        function uiAverage() { logToBox('funcOutput', average(Number(document.getElementById('avgA').value), Number(document.getElementById('avgB').value))); }
-        function uiSinglePrime() { logToBox('funcOutput', singlePrime(Number(document.getElementById('singlePrimeInput').value))); }
-
-    
+  
         let numb = [5, 11, 14, 6, 9, 19, 4];
         function updateArrayDisplay() { document.getElementById('displayArray').innerText = JSON.stringify(numb); }
-        function resetArray() { numb = [5, 11, 14, 6, 9, 19, 4]; updateArrayDisplay(); logToBox('arrayConsole', '> Array Reset'); }
+        function resetArray() { 
+            numb = [5, 11, 14, 6, 9, 19, 4]; 
+            updateArrayDisplay(); 
+            document.getElementById('arrayConsole').innerHTML = 'Matrix log reset...'; 
+        }
         
         function runOp(op) {
             let res = "";
@@ -129,6 +128,8 @@
             }
             
             const consoleEl = document.getElementById('arrayConsole');
-            consoleEl.innerHTML += `<div><span class="text-blue-400 font-bold">> ${op}():</span> ${res}</div>`;
+            consoleEl.innerHTML += `<div><span class="text-sky-400 font-bold">> ${op}():</span> ${res}</div>`;
             consoleEl.scrollTop = consoleEl.scrollHeight;
         }
+
+        updateArrayDisplay();
