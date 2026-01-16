@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 [**View Live Demo**](https://gemachistesfaye.github.io/Frontend-Showcase/Summer-Bootcamp-Projects/JS-Practice/) 
+## 🌐 [**View Live Demo**](https://gemachistesfaye.github.io/Frontend-Showcase/Summer-Bootcamp-Projects/css-practice/) 
 
 ---
 
